@@ -1,6 +1,6 @@
 # Workshop Manual: Effective AI Collaboration for Scientific Software
 
-This repository is a pedagogical sandbox designed for university lecturers, researchers, and principal investigators. Through this hands-on workshop, you will learn how to shift from using AI as a simple autocomplete tool to treating it as a structured, deterministic engineering co-pilot.
+This repository is a pedagogical aid, designed for university researchers. Through this hands-on workshop, you will learn how to shift from using AI as a simple autocomplete tool to treating it as a structured, deterministic engineering co-pilot.
 
 ---
 
@@ -21,18 +21,17 @@ Before running the exercises, ensure your local environment is configured:
 1. Clone or extract this repository to your local machine.
 2. Initialize your virtual environment and install dependencies:
    ```bash
+   python --version  # This workshop has been tested with Python 3.12 and 3.14
    python -m venv .venv
    source .venv/bin/activate  # Windows: .venv\Scripts\activate
-   pip install -r requirements.txt
+   python -m pip install -r requirements.txt
    ```
-3. Generate the public dataset by running the synthetic data generator:
+3. Verify the baseline test suite passes:
    ```bash
-   python generate_data.py
+   python -m pytest
    ```
-4. Verify the baseline test suite passes:
-   ```bash
-   pytest
-   ```
+
+The dataset `data/experimental_spectra.csv` has already been generated for you using the script in `workshop_preparation`.
 
 ---
 
@@ -40,13 +39,13 @@ Before running the exercises, ensure your local environment is configured:
 **Goal:** Build a mental model of the codebase before writing a single line of code.
 
 1. Open your AI Assistant interface.
-2. Copy and paste the text from `prompts/01_zoom_out.txt` into the prompt window.
-3. Review the AI’s structural explanation of `src/analysis.py`. 
-4. Check the AI's explanation against the source files. Did it correctly identify how data flows from file storage to the plotting module? Did it notice any architectural flaws?
+2. Ask your AI Assistant to analyse `src/analysis.py` and provide a structured overview.
+3. Check the AI's explanation against the source files. Did it correctly identify how data flows from file storage to the plotting module? Did it notice any architectural flaws?
+4. Now read, copy and paste the text from `prompts/01_zoom_out.txt` into the prompt window. What do you observe?
 
 ---
 
-## Track A: Basic Track (Testing & Bug Remediation)
+## Track A: Intermedieate Track (Testing & Bug Remediation)
 **Goal:** Use AI to uncover structural edge cases, write automated regression tests, and fix silent data-corruption bugs.
 
 ### Step 1: Discover Missing Tests
