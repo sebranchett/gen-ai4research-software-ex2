@@ -1,8 +1,9 @@
-import pandas as pd
-import numpy as np
-from scipy.optimize import curve_fit
 import os
+
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from scipy.optimize import curve_fit
 
 
 def load_and_clean_data(filepath: str) -> pd.DataFrame:
