@@ -45,7 +45,7 @@ The dataset `data/experimental_spectra.csv` has already been generated for you u
 
 ---
 
-## Track A: Intermedieate Track (Testing & Bug Remediation)
+## Track A: Intermediate Track (Testing & Bug Remediation)
 **Goal:** Use AI to uncover structural edge cases, write automated regression tests, and fix silent data-corruption bugs.
 
 ### Step 1: Discover Missing Tests
