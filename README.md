@@ -16,6 +16,10 @@ Your mission is to help Phil refactor, stabilize, and extend this codebase using
 
 ## Prerequisites & Installation
 
+Prerequisites:
+1. Computer with a recent version of Python and a terminal interface.
+2. Access to an AI Assistant.
+
 Before running the exercises, ensure your local environment is configured:
 
 1. Clone or extract this repository to your local machine.
@@ -30,12 +34,13 @@ Before running the exercises, ensure your local environment is configured:
    ```bash
    python -m pytest
    ```
+   Tests should pass, but you may get warnings.
 
 The dataset `data/experimental_spectra.csv` has already been generated for you using the script in `workshop_preparation`.
 
 ---
 
-## Workshop Warm-Up (Both Tracks)
+## Workshop Warm-Up
 **Goal:** Build a mental model of the codebase before writing a single line of code.
 
 1. Open your AI Assistant interface.
@@ -94,3 +99,4 @@ The dataset `data/experimental_spectra.csv` has already been generated for you u
 * **AI as an Executant, You as the Architect:** The AI writes clean loops and test wrappers, but you must define the mathematical boundaries and physical invariants.
 * **Context Budgeting:** Large chat histories make AI models lazy and inaccurate. Breaking tasks into small, structured handoff intervals keeps local and open models highly sharp and predictable.
 
+The author collaborated with Google Gemini and GitHub Copilot to create this repository.
