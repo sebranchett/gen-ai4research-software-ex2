@@ -58,7 +58,7 @@ The dataset `data/experimental_spectra.csv` has already been generated for you u
 * Run `pytest`. You should see your new test **Fail** (Red phase).
 
 ### Step 3: Repair the Logic
-* Feed the traceback error and the code back to the AI using the `04_diagnose.txt` template format.
+* Feed the traceback error back to the AI and ask it to suggest a fix.
 * Apply the AI’s suggested fix to `src/analysis.py` (e.g., using `pd.to_numeric(..., errors='coerce')`).
 * Run `pytest` again. Verify everything turns **Green**.
 
